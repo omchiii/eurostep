@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konac 150mm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light white"
+        style="border-bottom: 0.6px solid rgb(58,60,109); background-color: white;">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt=""> <br> <span
+                    style="color: grey; font-size: 14px; margin-left: 4rem;">Euro step
+                    d.o.o</span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="color: rgb(58,60,109);">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="index.html" style="color: rgb(58,60,109);">Naši
+                            Proizvodi</a>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="nav-link" href="o-nama.html"> O nama</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body style="background-color: rgb(248,249,250);">
+
+
+
+    <div style="text-align: center;" class="container">
+        <a href="index.html" style=" color:rgb(58,60,109);">
+            <p style="font-size: 20px; text-align: left; margin-top: 2rem; text-decoration: underline; ">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-square-fill"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.5 8.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z" />
+                </svg> Natrag na Proizvode
+        </a></p>
+        <img src="https://alriplik.com.tr/wp-content/uploads/2019/10/1-2.jpg" height="300px" alt="" width="100%"
+            style=" margin-top: 2rem; max-width: 500px;">
+        <h2 style="margin-top: 2rem; margin-bottom: 2rem; color: rgb(58,60,109);">Konac 150</h2>
+        <p style="font-size: 20px;"> <b>Debljina:</b> 150mm <br>
+            <b>Dužina:</b> 10,000 metara<br>
+            <b>Cijena:</b> 4,30KM+PDV<br>
+
+        </p>
+
+
+    </div>
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <div class="col">
+                <h2 style="margin-top: 2rem; color: rgb(58,60,109);">Dostupne Boje</h2>
+
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="https://i.pinimg.com/originals/4b/11/bf/4b11bf37ea567ed65d140644e9d990ed.jpg"
+                    height="400px" alt="" width="100%" style=" margin-top: 2rem; max-width: 600px;">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>// Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+<footer class="page-footer font-small blue"
+    style="margin-top: 2rem; background-color: white; border-top: 0.6px solid rgb(58,60,109);">
+    <div class="container">
+        <p> <br>
+            <b>Euro step d.o.o</b> <br>
+            Sarajevo 71210 Ilidža Jahijela Fincija 7 <br>
+            +387(0)61 033 021 <br>
+            alomerovicaki@gmail.com</p>
+
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center" style="padding-bottom: 1rem;">© 2020 Copyright
+        <b>Euro step d.o.o</b>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+
+
+</html>
