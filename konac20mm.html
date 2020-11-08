@@ -14,23 +14,23 @@
 
 </head>
 <header>
+    <div style="height: 10px; width: 100% ;background-color: #0b375f; color: #0b375f;">asd</div>
     <nav class="navbar navbar-expand-lg navbar-light white"
-        style="border-bottom: 0.6px solid rgb(58,60,109); background-color: white;">
+        style="border-bottom: 0.6px solid #0b375f; background-color: white; padding-top: 20px;">
         <div class="container-fluid container">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt=""> <br> <span
-                    style="color: grey; font-size: 14px; margin-left: 4rem;">Euro step
-                    d.o.o</span> </a>
+            <a class="navbar-brand" href="#" style="text-align: center;"> <img src="img/logo2.png" alt="euro step" width="250rem"><br> <img src="img/logo.jpg" width="100rem" alt="euro step"> 
+           </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="color: rgb(58,60,109);">
+            <div class="collapse navbar-collapse" id="navbarNav" style="color: #0b375f;">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="index.html" style="color: rgb(58,60,109);">Naši
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #0b375f;">Naši
                             Proizvodi</a>
                     </li>
-                    <li class=" nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="o-nama.html"> O nama</a>
                     </li>
 
@@ -46,7 +46,7 @@
 
 
     <div style="text-align: center;" class="container">
-        <a href="index.html" style=" color:rgb(58,60,109);">
+        <a href="index.html" style=" color:#0b375f">
             <p style="font-size: 20px; text-align: left; margin-top: 2rem; text-decoration: underline; ">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-square-fill"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -54,9 +54,9 @@
                         d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.5 8.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z" />
                 </svg> Natrag na Proizvode
         </a></p>
-        <img src="https://alriplik.com.tr/wp-content/uploads/2019/10/1-2.jpg" height="300px" alt="" width="100%"
+        <img src="img/1.png" alt="" width="100%"
             style=" margin-top: 2rem; max-width: 500px;">
-        <h2 style="margin-top: 2rem; margin-bottom: 2rem; color: rgb(58,60,109);">Konac 20</h2>
+        <h2 style="margin-top: 2rem; margin-bottom: 2rem; color: #0b375f">Konac 20</h2>
         <p style="font-size: 20px;"> <b>Debljina:</b> 20mm <br>
             <b>Dužina:</b> 1500 metara<br>
             <a href="tel:061-033-021"><button type="button" class="btn btn-success btn-detail"><svg width="1em"
@@ -73,24 +73,19 @@
     <div class="container" style="text-align: center;">
         <div class="row">
             <div class="col">
-                <h2 style="margin-top: 2rem; color: rgb(58,60,109);">Dostupne Boje</h2>
-
-                <!-- Trigger the Modal -->
-                <img id="myImg" src="https://i.pinimg.com/originals/4b/11/bf/4b11bf37ea567ed65d140644e9d990ed.jpg"
-                    height="400px" alt="" width="100%" style=" margin-top: 2rem; max-width: 600px;">
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-
-                    <!-- The Close Button -->
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-                    <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
-
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
+                <h2 style="margin-top: 2rem; color: #0b375f">Dostupne Boje</h2>
+            
+                <div class="row" style="margin-top: 2rem;">
+                    <div class="col-xl">
+                        <img src="img/katalog1/1.jpg"  alt="" width="100%" height="95%" >
+                        
+                    </div>    
+                    <div class="col-xl">
+                        <img src="img/katalog1/2.jpg" alt="" width="100%" >
+                    </div>
+                
                 </div>
+        
             </div>
 
         </div>
@@ -100,32 +95,12 @@
 
 
 
-    <script>// Get the modal
-        var modal = document.getElementById('myModal');
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            modalImg.alt = this.alt;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
+    
 </body>
 
 <footer class="page-footer font-small blue"
-    style="margin-top: 2rem; background-color: white; border-top: 0.6px solid rgb(58,60,109);">
+    style="margin-top: 2rem; background-color: white; border-top: 0.6px solid #0b375f">
     <div class="container">
         <p> <br>
             <b>Euro step d.o.o</b> <br>

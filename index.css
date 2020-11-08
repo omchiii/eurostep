@@ -24,6 +24,8 @@
    } 
   }
 
+ 
+
   @media only screen and (max-width: 990px) {
     .grid-project {
         grid-template-columns: 50% 50%;
@@ -43,8 +45,14 @@
     .btn-detail{
         width: 100%;
     }
+    .col-md img{
+        width: 100%;
+    }
     
    }
+
+
+  
 
 
 /* Style the Image Used to Trigger the Modal */
@@ -133,3 +141,5 @@
         width: 100%;
     }
 }
+
+
